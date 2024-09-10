@@ -17,6 +17,13 @@ The dataset used is the *Glassdoor Job Reviews Dataset*, which contains reviews 
 - **Work-life balance, Culture values, Diversity inclusion, Career opportunities, Compensation & benefits, Senior management**: Numerical ratings from the reviews.
 - **Headline, Pros, Cons**: Text-based reviews.
 
+Top 16 Companies with Most Reviews
+
+The image below shows the top 16 companies with the most reviews in the Glassdoor dataset.
+![Top 16 Companies With Reviews](top_16_companies_with_most_reviews.png)
+
+Image source: Kaggle Notebook by *David Gauthier*
+
 ### 2. **Problem Definition**
 The goal is to predict the **overall job rating** based on text reviews and other features. This is a **supervised classification problem** where the rating ranges from 1 to 5.
 
