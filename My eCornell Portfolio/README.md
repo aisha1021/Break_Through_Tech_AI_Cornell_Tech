@@ -37,8 +37,40 @@ The project uses a **Neural Network** model implemented using **TensorFlow/Keras
 - Perform hyperparameter tuning and model selection to improve performance.
 
 ### 6. **Results**
+
 - The model achieved an accuracy of around **50.7%** on the test set, with further improvements possible through additional feature engineering and hyperparameter tuning.
 - The neural network model performed well in predicting higher job ratings but had challenges with lower ratings.
+
+#### Confusion Matrix Analysis
+
+![Confusion Matrix Heatmap](Confusion_matrix_heatmap.png)
+
+The confusion matrix provides a detailed view of how predictions are distributed across the five different rating classes. Each cell represents the percentage of instances classified into a particular rating.
+
+- **Diagonal Cells**: Represent correct classifications where the predicted rating matches the actual rating:
+  - **Rating 1**: 47% correctly predicted.
+  - **Rating 2**: 49% correctly predicted.
+  - **Rating 3**: 41% correctly predicted.
+  - **Rating 4**: 62% correctly predicted.
+  - **Rating 5**: 54% correctly predicted.
+
+- **Off-Diagonal Cells**: Indicate misclassifications where the predicted rating does not match the actual rating:
+  - The model often confuses ratings 1 and 3, with 27% of actual rating 1 being predicted as rating 3, and 14% as rating 2.
+  - There is significant spillover between adjacent ratings. For example, 46% of actual rating 3 instances are predicted as rating 4.
+  - The model sometimes overestimates ratings, with 22% of actual rating 4 instances classified as rating 5 and 9% of rating 1 instances misclassified as rating 4.
+
+**Interpretation and Next Steps**
+
+- **Model Strengths**: The model performs relatively well on ratings 4 and 5, with the highest correct classification percentages (62% and 54%, respectively). This suggests that the features used are effective for distinguishing higher ratings.
+  
+- **Model Weaknesses**: There is noticeable confusion between lower ratings (1 to 3). For instance, a significant portion of rating 1 samples is being classified as rating 3 (27%), and rating 3 is being classified as rating 4 (46%). This indicates a need for better differentiation between dissatisfaction and mid-level satisfaction.
+
+- **Potential Improvements**:
+  - **Feature Engineering**: More detailed feature engineering could help the model better differentiate between similar ratings, especially between 1 and 3, and 3 and 4.
+  - **Text Preprocessing**: Enhancing text feature processing using advanced NLP techniques (e.g., word embeddings or fine-tuned transformers) might improve understanding of subtle differences in reviews.
+  - **Model Complexity**: Using more complex models or fine-tuning hyperparameters could reduce misclassifications, particularly between adjacent ratings.
+
+By addressing these areas, the model’s accuracy and prediction precision could improve, leading to better differentiation between ratings.
 
 ### 7. **Conclusion**
 This project demonstrates the full machine learning life cycle, from data preparation and feature engineering to model training and evaluation. The model provides insights into how companies can improve employee satisfaction by understanding the factors contributing to overall job ratings.
