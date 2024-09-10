@@ -32,7 +32,7 @@ The project uses a **Neural Network** model implemented using **TensorFlow/Keras
 - Other models considered include **Logistic Regression** and **Random Forest Classifier**.
 
 ### 5. **Model Training & Evaluation**
-- Train the model using 75% of the data, with 20% of the training data reserved for validation.
+- Train the model using 75% of the data, with 25% of the training data reserved for validation.
 - Evaluate the model's performance on the test set using accuracy, precision, recall, F1-score, and confusion matrix.
 - Perform hyperparameter tuning and model selection to improve performance.
 
