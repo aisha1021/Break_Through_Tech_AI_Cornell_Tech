@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project focuses on implementing a machine learning model following the machine learning life cycle. The primary goal is to predict job ratings based on employee reviews from the Glassdoor dataset. We will use text-based natural language processing (NLP) and numerical feature-based techniques to build a predictive model.
+This project focuses on implementing a machine learning model following the machine learning life cycle. The primary goal is to predict job ratings based on employee reviews from the Glassdoor dataset. The project will use text-based natural language processing (NLP) and numerical feature-based techniques to build a predictive model.
 
 ## Project Structure
 
