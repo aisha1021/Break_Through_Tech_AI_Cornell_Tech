@@ -20,6 +20,7 @@ The dataset used is the *Glassdoor Job Reviews Dataset*, which contains reviews 
 Top 16 Companies with Most Reviews
 
 The image below shows the top 16 companies with the most reviews in the Glassdoor dataset.
+
 ![Top 16 Companies With Reviews](top_16_companies_with_most_reviews.png)
 
 Image source: Kaggle Notebook by *David Gauthier*
